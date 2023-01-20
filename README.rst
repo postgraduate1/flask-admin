@@ -1,5 +1,53 @@
 Flask-Admin
 ===========
+# 安装过程
+
+## conda
+conda create -p d:\mini\py38 python==3.8
+conda activate d:\mini\py38             
+pip install flask-admin 
+python setup.py install
+
+## VSCODE
+    cd d:\mini\flask-admin\flask_admin
+    d:\mini\py38\python.exe d:\mini\flask-admin\setup.py install
+    pytest
+
+
+d:\mini\py38\Scripts\pip.exe install -r d:\mini\flask-admin\examples\sqla\requirements.txt
+
+d:\mini\py38\python.exe d:\mini\flask-admin\examples\sqla\run_server.py  
+
+**新的requirements-dev**
+``` python
+    flake8
+    Flask==0.10
+    Flask-SQLAlchemy==0.15
+    peewee
+    wtf-peewee
+    mongoengine==0.21.0
+    pymongo
+    flask-mongoengine==0.8.0
+    pillow>=3.3.2
+    Babel<=2.9.1
+    flask-babelex
+    shapely==1.5.9
+    geoalchemy2
+    psycopg2
+    pytest
+    pytest-cov
+    coveralls
+    pylint
+    sqlalchemy-citext
+    sqlalchemy-utils>=0.36.6
+    azure-storage-blob
+    arrow<0.14.0
+    colour
+    email-validator
+    wtforms==2.3.3
+```
+
+
 
 The project was recently moved into its own organization. Please update your
 references to *git@github.com:flask-admin/flask-admin.git*.
